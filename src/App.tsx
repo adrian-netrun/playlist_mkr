@@ -1,9 +1,11 @@
-import './App.css'
+import OAuthLogin from './components/OAuthLogin'
+import './styles/test.sass'
+
 
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <OAuthLogin />
     </>
   )
 }
