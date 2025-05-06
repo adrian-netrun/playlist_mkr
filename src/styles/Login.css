@@ -1,0 +1,28 @@
+.login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+.login__container__btn__grp {
+  height: 4rem;
+}
+
+.login__container__btn__grp button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 15rem;
+}
+
+.login__container__btn__grp img {
+  flex: 1;
+}
+
+.login__container__btn__grp p {
+  flex: 4;
+}

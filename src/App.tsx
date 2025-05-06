@@ -1,11 +1,11 @@
-import OAuthLogin from './components/OAuthLogin'
-import './styles/test.sass'
+import Landing from './pages/Landing'
+import './App.css'
 
 
 function App() {
   return (
     <>
-      <OAuthLogin />
+      <Landing /> 
     </>
   )
 }

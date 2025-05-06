@@ -1,0 +1,72 @@
+.hero__ img {
+  position: relative;
+  opacity: 0.8;
+  height: 900px;
+  width: 100%;
+}
+
+.content__ {
+  background: none;
+  color: white;
+  position: absolute;
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 2.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content__mission {
+  margin: 0.8rem;
+  background: none;
+}
+
+.content__mission > * {
+  background: none;
+}
+
+.content__mission a {
+  text-decoration: underline;
+  background:none;
+  color: white;
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+
+.content__why {
+  margin: 0.8rem;
+  background: none;
+}
+
+.content__why__heading {
+  background: none;
+}
+
+.content__why p {
+  background: none;
+}
+
+.content__call {
+  text-align: center;
+  background: #aeb2b8;
+  width: 100%;
+}
+
+.content__call h3 {
+  font-size: 2rem;
+  background: none;
+}
+
+.content__call p {
+  background: none;
+}
+
+.content__call a {
+  text-decoration: none;
+  background: none;
+  color: black;
+}

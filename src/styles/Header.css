@@ -1,0 +1,21 @@
+.container__ {
+  text-align: center;
+  width: 100%;
+}
+
+.container__ div{
+  display: inline-block;
+  vertical-align: middle;
+  align-content: center;
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+.container__logo img{
+  height: 3.75rem;
+  width: 3.75rem;
+}
+
+.container__heading h1{
+  font-size: 2rem;
+  font-weight: 600;
+}
