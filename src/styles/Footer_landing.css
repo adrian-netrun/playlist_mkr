@@ -1,0 +1,37 @@
+.landing__footer__ {
+  color: #f5f5f5;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #393E46;
+  width: 100%;
+}
+
+.landing__footer__about__head h4 {
+  font-size: 1.2rem;
+}
+
+.landing__footer__about__head p {
+  margin: 0.8rem 0;
+}
+
+.landing__footer__tech__head {
+  margin: 0.8rem 0;
+}
+
+.landing__footer__tech__head h4 {
+  font-size: 1.2rem;
+}
+
+.landing__footer__portfolio__head {
+  margin-bottom: 0.8rem;
+}
+
+.landing__footer__portfolio__head p {
+  margin: 0.8rem 0;
+}
+
+.landing__footer__portfolio__head a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+

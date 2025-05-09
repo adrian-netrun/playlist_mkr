@@ -1,13 +1,17 @@
 .hero__ img {
   position: relative;
-  opacity: 0.8;
+  opacity: 0.5;
   height: 900px;
-  width: 100%;
+  width: 95%;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translateX(-50%) 
 }
 
 .content__ {
   background: none;
-  color: white;
+  color: #f5f5f5;
   position: absolute;
   text-align: center;
   word-wrap: break-word;
@@ -32,13 +36,13 @@
 .content__mission a {
   text-decoration: underline;
   background:none;
-  color: white;
+  color: #f5f5f5;
   font-weight: bold;
   margin-left: 0.25rem;
 }
 
 .content__why {
-  margin: 0.8rem;
+  margin: 1.5rem;
   background: none;
 }
 
@@ -51,22 +55,26 @@
 }
 
 .content__call {
+  margin-top: 1rem;
   text-align: center;
-  background: #aeb2b8;
   width: 100%;
 }
 
 .content__call h3 {
   font-size: 2rem;
   background: none;
+  color: #f5f5f5;
 }
 
 .content__call p {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
   background: none;
+  color: #f5f5f5;
 }
 
 .content__call a {
   text-decoration: none;
   background: none;
-  color: black;
+  color: #f5f5f5;
 }
