@@ -1,5 +1,5 @@
 import Header from '../components/Header'
-import Login from '../components/Login'
+import LoginButton from '../components/LoginButton'
 import LandingFooter from '../components/LandingFooter'
 import '../styles/Landing.css'
 
@@ -28,7 +28,7 @@ function Landing() {
               should you wish to view the rest of my portfolio click see bottom of page
             </p>
           </div>
-      <Login />
+      <LoginButton />
       <LandingFooter />
     </>
   )
