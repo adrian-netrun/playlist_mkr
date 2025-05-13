@@ -8,7 +8,7 @@ function Landing() {
     <>
       <Header />
         <section className='hero__'>
-          <img src="src/assets/background__land__final.png" />
+          <img src="background__land__final.png" alt='hero' />
         </section>
         <div className='content__'>
           <div className='content__mission'>

@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className='container__'>
       <div className='container__logo'>
-        <a href="#"><img src="src/assets/LightLogo.png"/></a>
+        <a href="#"><img src="LightLogo.png"/></a>
       </div>
       <div className='container__heading'>
         <h1 className='nabar__name'>Playlistify</h1>
