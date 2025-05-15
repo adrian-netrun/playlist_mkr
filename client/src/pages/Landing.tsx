@@ -1,14 +1,15 @@
 import Header from '../components/Header'
 import LoginButton from '../components/LoginButton'
 import LandingFooter from '../components/LandingFooter'
-import '../styles/Landing.css'
+import heroImg from '../assets/background__land__final.png'
+import './Landing.css'
 
 function Landing() {
   return (
     <>
       <Header />
         <section className='hero__'>
-          <img src="background__land__final.png" alt='hero' />
+          <img src={heroImg} />
         </section>
         <div className='content__'>
           <div className='content__mission'>
