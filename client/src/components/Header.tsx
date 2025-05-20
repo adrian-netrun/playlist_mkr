@@ -1,6 +1,5 @@
-import './Header.css'
 import logo from '../assets/LightLogo.png'
-
+import './Header.css'
 
 // The header will also contain the Navigation elements
 function Header() {

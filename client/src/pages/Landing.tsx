@@ -5,6 +5,7 @@ import heroImg from '../assets/background__land__final.png'
 import './Landing.css'
 
 function Landing() {
+
   return (
     <>
       <Header />
