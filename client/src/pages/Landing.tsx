@@ -2,19 +2,10 @@ import Header from '../components/Header'
 import LoginButton from '../components/LoginButton'
 import LandingFooter from '../components/LandingFooter'
 import heroImg from '../assets/background__land__final.png'
-import './Landing.css'
+import '../styles/Landing.css'
+
 
 function Landing() {
-
-    // *************************************** //
-    //      DO NOT WRAP THIS LINE UNNESCCARY   //
-    //         %20 ADDED TO Q STRING           //
-    // *************************************** //
-
-    const authUrl: string = `https://accounts.spotify.com/authorize?client_id=${import.meta.env.VITE_CLIENT_ID}&redirect_uri=${import.meta.env.VITE_REDIRECT_URI}&response_type=code`
-    const scope = ['user-read-playback-state, user-modify-playback-state']
-    const LOGIN_URL = authUrl + `&scope=${encodeURIComponent(scope.join(' '))}`
-    
   return (
     <>
       <Header />
@@ -39,7 +30,7 @@ function Landing() {
               should you wish to view the rest of my portfolio click see bottom of page
             </p>
           </div>
-      <LoginButton authUrl={authUrl}/>
+        <LoginButton />
       <LandingFooter />
     </>
   )

@@ -1,14 +1,15 @@
 import spotifyLogo from '../assets/spotify_logo.png'
-import './Login.css'
+import '../styles/Login.css'
 
-interface ButtonProps {
-  authUrl: string
-}
+const authUrl: string = `https://accounts.spotify.com/authorize?client_id=${import.meta.env.VITE_CLIENT_ID}&redirect_uri=${import.meta.env.VITE_REDIRECT_URI}&response_type=code`
+const scope = ['user-read-playback-state', 'user-read-currently-playing']
 
-const LoginButton: React.FC<ButtonProps> = ({authUrl}) => {
+const LoginButton = () => {
+  const LOGIN_URL = authUrl + `&scope=${encodeURIComponent(scope.join(' '))}`
+
   return (
     <section className='login__container' >
-        <a className='login__container__btn__grp' href={authUrl}>
+        <a className='login__container__btn__grp' href={LOGIN_URL}>
             <img src={spotifyLogo} />
             <p>Sign in with Spotify</p>
         </a>

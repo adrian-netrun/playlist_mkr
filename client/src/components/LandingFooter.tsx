@@ -1,4 +1,4 @@
-import './Footer_landing.css'
+import '../styles/Footer_landing.css'
 
 function LandingFooter() {
   return (
