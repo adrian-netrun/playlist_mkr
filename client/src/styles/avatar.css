@@ -1,0 +1,10 @@
+.avatar {
+  width: 3rem;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #169976;
+}
+
+.avatar span {
+  line-height: 3rem;
+}

@@ -1,15 +1,14 @@
 interface UserProps {
-  username: string, 
+  username: string
   spotifyProfileUrl: string
 }
 
-const User: React.FC<UserProps> = ({username, spotifyProfileUrl}) => {
+const User: React.FC<UserProps> = ({ username, spotifyProfileUrl }) => {
   return (
     <div>
       {username}
       {spotifyProfileUrl}
     </div>
-
   )
 }
 

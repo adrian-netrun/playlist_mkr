@@ -1,27 +1,28 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 function useRefresh(refreshToken: string, expiresIn: number) {
   const [tokens, setTokens] = useState()
 
   useEffect(() => {
-    if (!refreshToken || !expiresIn) return 
+    if (!refreshToken || !expiresIn) return
     const interval = setInterval(() => {
-        axios.post('http://localhost:3000/refresh', {
-          refreshToken: refreshToken
+      axios
+        .post('http://localhost:3000/refresh', {
+          refreshToken: refreshToken,
         })
-        .then(resp => {
+        .then((resp) => {
           setTokens(resp.data)
-        })  
-        .catch(error => {
+        })
+        .catch((error) => {
           console.log(error)
-        })    
-      }, (expiresIn - 60) * 1000)
-  
-      return () => clearInterval(interval)
-    }, [refreshToken, expiresIn])
+        })
+    }, (expiresIn - 60) * 1000)
 
-    return tokens
+    return () => clearInterval(interval)
+  }, [refreshToken, expiresIn])
+
+  return tokens
 }
 
 export default useRefresh
