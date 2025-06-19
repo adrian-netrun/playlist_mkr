@@ -1,4 +1,5 @@
 import logo from '../assets/LightLogo.png'
+import '../styles/HeaderAuthd.css'
 import '../styles/avatar.css'
 
 const handleLogout = () => {
@@ -17,20 +18,18 @@ const Avatar = () => {
 
 function HeaderAuthed() {
   return (
-    <div className="container__">
-      <div className="container__logo">
+    <nav className="auth_navbar">
+      <div className="auth_navbar__left">
         <a href="#">
           <img src={logo} />
         </a>
+        <h1 className="auth_navbar__name">Playlistify</h1>
       </div>
-      <div className="container__heading">
-        <h1 className="nabar__name">Playlistify</h1>
-      </div>
-      <Avatar />
-      <div className="logout__button">
+      <div className="auth_navbar__right">
+        <Avatar />
         <button onClick={handleLogout}>Logout</button>
       </div>
-    </div>
+    </nav>
   )
 }
 
